@@ -13,9 +13,8 @@ users.createOne = (object) => users.push(object);
 exports.showList = (req, res) => res.json(users);
 exports.showOne = (req, res) => res.json(users.findOne('id', parseInt(req.params.id, 10)));
 exports.destroy = (req, res) => {
-    const id = parseInt(req.params.id, 10);
-    users.removeOne('id', id);
-    res.json({msg:`user(id:${id}) removed`});
+    users.removeOne('id', parseInt(req.params.id, 10));
+    res.json({msg:`user removed`});
     res.redirect('/users');
 };
 exports.create = (req, res) => {
@@ -23,6 +22,6 @@ exports.create = (req, res) => {
         id: users.length,
         name: req.body.name
     });
-    res.json({msg:`user(id:${req.body.name}) registered`});
+    res.json({msg:`user registered`});
     res.redirect('/users');
 };
