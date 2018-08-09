@@ -15,6 +15,7 @@ app.use(cors());
 
 app.get('/', (req, res) => res.json({ msg: 'hello rest api' }));
 app.use('/users', require('./routes/api/user'));
+app.use('/dummy', require('./routes/api/dummy'));
 app.use('/crawl', require('./routes/api/crawl'));
 
 app.listen(app.get('port'), () => {
