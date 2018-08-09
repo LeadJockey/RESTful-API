@@ -13,17 +13,19 @@ exports.test = (req, res) => {
             const $list = res.$('.list_hotissue.issue_row.list_mini li');
             const data =[];
             $list.each((i,e)=>{
-                data.push({rank:i+1,el:res.$(e).find('.link_issue').text()});
+                data.unshift({rank:i+1,el:res.$(e).find('.link_issue').text()});
             })
             liveRank.push({date:new Date(),data:data});
             fs.writeFile(filePath, JSON.stringify(liveRank, undefined, 2), 'UTF-8', function (err) {
                 if (err) { return console.log(err) }
                 console.log('inserted live rank '+ new Date());
             });
+            res.options.res.json(liveRank);
             done();
         }
     });
-    crawler.queue('http://www.daum.net');
-
-    res.json({ msg: 'hello crawler' });
+    crawler.queue({
+        uri:'http://www.daum.net',
+        res:res
+    });
 };
