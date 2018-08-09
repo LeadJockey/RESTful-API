@@ -19,6 +19,7 @@ exports.destroy = (req, res) => {
         res.json({ msg: 'user removed' });
     });
 };
+
 exports.create = (req, res) => {
     users.createOne({
         id: users.length,
