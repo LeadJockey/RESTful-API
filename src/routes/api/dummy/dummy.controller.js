@@ -4,7 +4,7 @@ const filePath = path.join(__dirname, '..', '..', '..', 'models', 'dummy.json');
 let dummys = require(filePath);
 
 
-//TODO dummy post insert function need to update
+//TODO  dummy post insert function need to update
 //models
 dummys.getIndex = (key, value) => dummy.findIndex(user => dummy[key] === value) || -1;
 dummys.findOne = (key, value) => dummy.filter(user => dummy[key] === value)[0] || {};
