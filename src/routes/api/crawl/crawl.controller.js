@@ -13,9 +13,9 @@ exports.test = (req, res) => {
             const $list = res.$('.list_hotissue.issue_row.list_mini li');
             const data =[];
             $list.each((i,e)=>{
-                data.unshift({rank:i+1,el:res.$(e).find('.link_issue').text()});
+                data.push({rank:i+1,el:res.$(e).find('.link_issue').text()});
             })
-            liveRank.push({date:new Date(),data:data});
+            liveRank.unshift({date:new Date(),data:data});
             fs.writeFile(filePath, JSON.stringify(liveRank, undefined, 2), 'UTF-8', function (err) {
                 if (err) { return console.log(err) }
                 console.log('inserted live rank '+ new Date());
