@@ -1,85 +1,75 @@
 [
-    {
-        "id": 1,
-        "data": {
-            "author": "shawn",
-            "message": "데이터의 포멧에 맞추어서 더미데이터를 생성해 주세요(필수 파라미터 id/ data)",
-            "birthday": "19880819",
-            "phone": "01012341234",
-            "adress": "yongin, kyong-gi, ROK",
-            "gender": "male",
-            "email": "dltldnjs5790@naver.com",
-            "reference": "https://github.com/LeadJockey/javascript-practice/blob/master/src/test/requestData.html",
-            "daumLiveRanks": [
-                {
-                    "date": "2018-08-09T09:26:27.308Z",
-                    "data": [
-                        {
-                            "rank": 10,
-                            "el": "다이아"
-                        },
-                        {
-                            "rank": 9,
-                            "el": "이영자 수영복"
-                        },
-                        {
-                            "rank": 8,
-                            "el": "소강원"
-                        },
-                        {
-                            "rank": 7,
-                            "el": "에쿠스 화재"
-                        },
-                        {
-                            "rank": 6,
-                            "el": "태풍 야기"
-                        },
-                        {
-                            "rank": 5,
-                            "el": "손예진"
-                        },
-                        {
-                            "rank": 4,
-                            "el": "한서희"
-                        },
-                        {
-                            "rank": 3,
-                            "el": "프로메테우스"
-                        },
-                        {
-                            "rank": 2,
-                            "el": "워마드"
-                        },
-                        {
-                            "rank": 1,
-                            "el": "한예슬"
-                        }
-                    ]
-                }
-            ],
-            "out": {
-                "tv": "",
-                "homo": {
-                    "family": {
-                        "father": "KEFJ5004",
-                        "mother": "JEFP2411",
-                        "stster": "KOQW9909"
-                    },
-                    "relation": {
-                        "brotherInRaw": "EEFS9902"
-                    },
-                    "coWorker": {}
-                },
-                "sports": [],
-                "vidoeo": {},
-                "photos": [],
-                "places": []
-            },
-            "cp": {
-                "blueHouse": {},
-                "weather": {},
-                "product": {}
-            }
-        }
-    }
+	{
+		"brand": "울트라패션",
+		"menu":{
+			"outer":{
+				"bests":[],
+				"goods":[
+					{
+						"image":"",
+						"name":"희극 타이거 벨벳 후드티",
+						"category":"outer",
+						"massage":"마감임박",
+						"price":{
+							"original":13000,
+							"discounted":8000,
+							"currency":"원"
+						},
+						"batches":["GOOD","핏이예술"],
+						"sizes":["S","M","L","XL","2XL","3XL"],
+						"colors":["베이지", "아이보리", "와인", "블랙", "블루", "차콜", "네이비"]
+					}
+				]
+			},
+			"top":{},
+			"bottom":{},
+			"cap":{},
+			"bag":{},
+			"shoes":{},
+			"acc":{},
+			"training":{},
+			"design":{},
+			"music":{}
+		},
+		"good2": {
+			"main": [
+				{
+					"title": "꺼내입어요 절개 긴팔티",
+					"editor": "OKK_SJ",
+					"event": "1+1 핵이득",
+					"maker": "5XL제작상품",
+					"badges": [
+						"#오까네메이",
+						"BIS SIZE UP",
+						"NEW",
+						"추천상품"
+					],
+					"review": 2,
+					"image": {
+						"main": "",
+						"sub": ""
+					},
+					"prise": {
+						"currency": "원",
+						"original": 24000,
+						"discounted": 13000
+					},
+					"colors": [
+						"베이지",
+						"아이보리",
+						"와인",
+						"블랙",
+						"블루",
+						"차콜",
+						"네이비"
+					],
+					"sizes": [
+						"L-XL",
+						"2XL-3XL",
+						"4XL-5XL"
+					]
+				}
+			]
+		}
+	}
 ]
